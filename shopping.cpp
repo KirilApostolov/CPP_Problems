@@ -12,10 +12,10 @@ int main () {
             s += p[ind];
             if (s % d == 0 && m < s) {
                 m = s;
-                r = j + 1;
+                r = j;
             }
         }
     }
-    cout << r;
+    cout << r + 1;
     return 0;
 }
