@@ -1,16 +1,14 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
+
 int main(){
     int n, k = 0;
     cin >> n;
-    for (int i = 2; i<= sqrt(n); i++){
+    for (int i = 2; i<= sqrt(n); i++)
         if (n%i == 0) {
-            k = i;
-            break;
+            cout << n/i;
+            return 0;
         }
-    }
-    if (k == 0) cout << 1;
-    else cout << n/k;
+    cout << 1;
     return 0;
 }
